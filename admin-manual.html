@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#123f49"><meta name="description" content="A quick guide to managing the FishLure dashboard.">
+  <title>FishLure Admin User Manual</title><link rel="stylesheet" href="style.css?v=20261007-admin-manual"><link rel="stylesheet" href="admin.css?v=20261007-admin-manual">
+  <style>
+    .guide-main{width:min(900px,calc(100% - 36px));margin:48px auto 90px}.guide-head{margin-bottom:22px}.guide-head h1{font:800 clamp(32px,5vw,48px) Manrope,sans-serif;letter-spacing:-1.5px;margin:8px 0}.guide-head p,.guide-card p,.guide-card li{color:#647b7c;line-height:1.65}.guide-card{background:#fff;border:1px solid #dce7e4;border-radius:20px;padding:clamp(20px,4vw,34px);margin:16px 0;box-shadow:0 18px 55px #123f490d}.guide-card h2{font:700 22px Manrope,sans-serif;margin:0 0 12px}.guide-card h3{font-size:16px;margin:18px 0 6px}.guide-card ol,.guide-card ul{padding-left:22px}.guide-card li{padding:3px 0}.guide-note{background:#fff6e6;border-radius:12px;padding:14px 16px;margin-top:16px;color:#65502e;line-height:1.55}.guide-nav{display:flex;gap:18px;align-items:center}.guide-nav a{color:#496365;font-weight:600}.guide-footer{text-align:center;color:#647b7c;padding:24px}
+    @media print{.guide-card{box-shadow:none;break-inside:avoid}.guide-main{margin-top:20px}}
+  </style>
+</head>
+<body class="admin-page">
+  <header class="admin-top"><a class="brand" href="index.html">♧ fishlure<span class="brand-dot">.</span></a><nav class="guide-nav"><a href="admin.html">← Admin dashboard</a><a href="index.html">Public website</a></nav></header>
+  <main class="guide-main">
+    <div class="guide-head"><span class="admin-kicker">ADMIN QUICK GUIDE</span><h1>Manage FishLure</h1><p>The dashboard controls the public fish and lure catalog, recommendation rules, and user feedback. Changes save to the website database.</p></div>
+    <section class="guide-card"><h2>Open the dashboard</h2><ol><li>Sign in on the FishLure homepage with an account that has administrator access.</li><li>Admin accounts open the dashboard after sign-in. You can also open <strong>admin.html</strong> while signed in.</li><li>If your account is not recognized as an administrator, ask the site owner to grant access.</li><li>Use <strong>Log out</strong> when finished, especially on a shared computer.</li></ol><div class="guide-note"><strong>Protect the site:</strong> give admin access only to trusted people. Do not share passwords or database credentials.</div></section>
+    <section class="guide-card"><h2>Search and sort entries</h2><p>Use the search box in Fish species, Lure styles, or Fish recommendations. Results filter as you type. Use <strong>Sort by</strong> to choose alphabetical order or Recently added.</p></section>
+    <section class="guide-card"><h2>Manage fish species</h2><ol><li>Open <strong>Fish species</strong> and select <strong>Add fish</strong>, or choose <strong>Edit</strong> on an existing row.</li><li>Enter a unique Species ID, common name, habitat group, habitat information, and usual depth zones.</li><li>Select <strong>Save fish</strong>. A Species ID cannot be changed when editing a fish.</li></ol></section>
+    <section class="guide-card"><h2>Manage lure styles</h2><ol><li>Open <strong>Lure styles</strong> and select <strong>Add lure</strong> or <strong>Edit</strong>.</li><li>Enter the lure name and description. Add size, depth zones, suitable environments, colors for clear/stained/murky water, suggested technique, retrieve method, and the reason it may work.</li><li>Select <strong>Save lure</strong>. Use clear descriptions because anglers may see this guidance on the public site.</li></ol></section>
+    <section class="guide-card"><h2>Manage fish recommendations</h2><ol><li>Open <strong>Fish recommendations</strong> and select <strong>Add rule</strong> or <strong>Edit</strong>.</li><li>Choose a fish and lure, then enter the recommended depth and explanation.</li><li>Set the display rank. Smaller numbers appear earlier in the list.</li><li>Select <strong>Save recommendation</strong> and confirm the rule appears in the table.</li></ol></section>
+    <section class="guide-card"><h2>Review reports and feedback</h2><p>Open <strong>Reports &amp; feedback</strong> to read user messages. Change a report status to New, Reviewed, or Resolved, then select <strong>Save status</strong>.</p></section>
+    <section class="guide-card"><h2>Delete carefully</h2><ul><li>Deleting a lure also removes recommendation rules that use it.</li><li>Deleting a fish also removes its recommendation rules. Fish with catch-log entries cannot be deleted.</li><li>Read the confirmation message before approving a deletion.</li></ul></section>
+    <section class="guide-card"><h2>If something goes wrong</h2><ul><li>Dashboard access denied: sign in with an admin account or ask the site owner for access.</li><li>Save fails: complete required fields, use a unique ID, and try again.</li><li>No search results: clear the search or try a shorter phrase.</li><li>Database/server error: ask the site owner to check PHP and database availability.</li></ul></section>
+  </main>
+  <footer class="guide-footer">FishLure administrator user manual</footer>
+</body></html>
